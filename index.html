@@ -112,7 +112,26 @@
                 width: 100%;
                 height: auto;
             }
-
+            .achievements-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .achievements-list li {
+                margin-bottom: 10px;
+                font-size: 1.2em;
+                text-align: left; /* Align text to the left for better readability */
+                padding-left: 20px; /* Add padding for bullet point spacing */
+                position: relative;
+            }
+            .achievements-list li:before {
+                content: "•"; /* Custom bullet point */
+                position: absolute;
+                left: 0;
+                color: #ff6f61; /* Change bullet color to make it stand out */
+                font-size: 1.5em; /* Adjust bullet size */
+                line-height: 1em; /* Align bullet with text */
+            }
         </style>
     </head>
     <body class="is-preload">
@@ -314,27 +333,27 @@
 
 
             <!-- Four -->
-            <!-- Achievements and Future Plans -->
+           <!-- Achievements and Future Plans -->
             <section id="four" class="wrapper style2 spotlights">
                 <div class="inner">
                     <div class="content">
                         <h2>Our Achievements</h2>
-                        <ul>
-                            <li>Launched our MVP with full functionality</li>
-                            <li>Developed a customized chatbot for better user interactions</li>
-                            <li>Optimized response times for a seamless user experience</li>
-                            <li>Scaled our application using open-source frameworks</li>
-                            <li>Deployed on cloud services for robust performance</li>
+                        <ul class="achievements-list">
+                            <li>Launched our MVP with complete functionality</li>
+                            <li>Developed a customized chatbot for enhanced user interactions</li>
+                            <li>Optimized response times for a seamless experience</li>
+                            <li>Scaled our application using open-source frameworks to handle increased traffic</li>
+                            <li>Deployed on cloud services for robust performance and reliability</li>
                         </ul>
                     </div>
                 </div>
                 <div class="inner">
                     <div class="content">
                         <h2>What's Next</h2>
-                        <ul>
+                        <ul class="achievements-list">
                             <li>Launch the beta version on the Apple Store for early adopters</li>
-                            <li>Introduce monetization through strategic social media campaigns</li>
-                            <li>Enhance platform scalability to accommodate a growing user base</li>
+                            <li>Implement monetization through targeted social media campaigns</li>
+                            <li>Enhance platform scalability to support a growing user base</li>
                             <li>Continuously improve the chatbot for richer interactions</li>
                             <li>Optimize our infrastructure for faster and more efficient performance</li>
                         </ul>
@@ -372,14 +391,6 @@
             </section>
         </div>
 
-        <!-- Footer -->
-        <footer id="footer" class="wrapper style1-alt">
-            <div class="inner">
-                <ul class="menu">
-                    <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </footer>
 
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
