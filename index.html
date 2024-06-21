@@ -17,7 +17,7 @@
             .intro-text {
                 flex: 1;
                 min-width: 300px;
-                margin-top: -100px; /* Move the text further up */
+                margin-top: -400px; /* Move the text further up */
             }
             .intro-image {
                 flex: 1;
@@ -29,7 +29,16 @@
                 height: auto;
                 margin-top: 20px;
             }
+            #sidebar {
+            position: fixed; /* Ensure the sidebar is fixed in place */
+            top: -100px; /* Move the sidebar down by 20px from the top */
+            left: 0;
+            width: 400px; /* Adjust the width as needed */
+            }
 
+            #sidebar .inner {
+                padding-top: 20px; /* Move the sidebar content up */
+            }
             #sidebar nav ul {
                 text-align: left; /* Align menu text to the left */
             }
@@ -114,9 +123,9 @@
                 <nav>
                     <ul>
                         <li><a href="#intro">Welcome</a></li>
-                        <li><a href="#two">What is HiveTalk</a></li>
+                        <li><a href="#two">What is LinkieTalk</a></li>
                         <li><a href="#one">Who we are</a></li>
-                        <li><a href="#faq">Why HiveTalk</a></li>
+                        <li><a href="#faq">Why LinkieTalk</a></li>
                         <li><a href="#four">Current Milestones & Future Objectives</a></li>
                         <li><a href="#five">Get in touch</a></li>
                     </ul>
